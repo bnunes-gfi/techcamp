@@ -9,10 +9,10 @@ DESCRIPTION:
 * Validation
 * Simulation
 
-ARCHITECTURE AND TECHNOGLY:
+ARCHITECTURE AND TECHNOLOGY:
 * JVM: 1.8.0_161
-* Frontend: ReactJS (v.16.2.0), babeljs, webpack, react-router, rectstrap, bootstrap 4, etc.
-* Backend: Spring boot (v1.5.10), Lombox
+* Frontend: ReactJS (v.16.2.0), babeljs, webpack, react-router, reactstrap, bootstrap 4, etc.
+* Backend: Spring boot (v1.5.10), Lombok
 * JPA: Spring Boot Data JPA, Spring Boot Data Rest
 * Tools & test: Intellij IDEA, maven (v3.5.2) and junit
 * Database: Sql Server 2012
@@ -28,8 +28,6 @@ REQUIREMENTS PRODUCTION:
 INSTRUCTIONS:
 You need to change the development and production properties in src\resources\application.yml file:
 * Development
-    * unzip techcamp-x.y.z.zip
-    * cd techcamp-x.y.z
     * Option 1:
         * mvn clean install  
         * java -jar target\techcamp-x.y.z.jar
@@ -42,7 +40,7 @@ You need to change the development and production properties in src\resources\ap
     
 RELEASES:
 * v.0.0.7
-- Bug detect it. It is need to change campuioValidatedCd column by campuioFinalDecisionQty column.
+- Bug detected. Wrong column 'campuioValidatedCd' being displayed instead of 'campuioFinalDecisionQty' column.
 * v.0.0.6
 - Add approve action in VALIDATION UI
 - Add errors control in edit fields all UI
