@@ -1,0 +1,19 @@
+# Ignoring files below #
+# IntelliJ/IDEA -related files #
+.idea/
+techcamp.iml
+
+# Maven node.js files #
+.mvn/
+
+# Build folder #
+build/
+
+# Target folder #
+target/
+
+# Generated npm files #
+# warn: package-lock.json is intended to be committed #
+node_modules/
+package-lock.json
+
