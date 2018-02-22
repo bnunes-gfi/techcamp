@@ -1,0 +1,48 @@
+{
+  "name": "technical-campaigns",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Technical Campaigns",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jesusperezfranco/techcamp/techcamp.git"
+  },
+  "keywords": [
+    "techcamp"
+  ],
+  "author": "Gfi",
+  "license": "SEE LICENSE IN license.txt",
+  "bugs": {
+    "url": "https://github.com/jesusperezfranco/techcamp/issues"
+  },
+  "homepage": "https://github.com/jesusperezfranco/techcamp",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-transition-group": "^2.2.1",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.11.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-bootstrap-table": "^4.3.1",
+    "reactstrap": "^4.8.0",
+    "bootstrap": "^4.0.0"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.1.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-eslint": "^8.2.1",
+    "eslint-config-react-app": "^2.1.0"
+  },
+  "proxy": "http://localhost:8080"
+}

@@ -1,0 +1,79 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: techcamp
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;database=TOYOTA_Tech_Camp
+    username: techcamp
+    password: techcamp
+  jpa:
+    properties:
+      hibernate.default_schema: techcamp
+security:
+  basic:
+    enabled: false
+    security:
+      user:
+        name: admin
+        password: admin
+management:
+  security:
+    enabled: false
+    server:
+      port: 8090
+---
+spring:
+  profiles: development
+  application:
+    name: techcamp
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;database=TOYOTA_Tech_Camp
+    username: techcamp
+    password: techcamp
+  jpa:
+    properties:
+      hibernate.default_schema: techcamp
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+    security:
+      user:
+        name: admin
+        password: admin
+management:
+  security:
+    enabled: false
+    server:
+      port: 8090
+---
+spring:
+  profiles: production
+  application:
+    name: techcamp
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;database=TOYOTA_Tech_Camp
+    username: techcamp
+    password: techcamp
+  jpa:
+    properties:
+      hibernate.default_schema: techcamp
+  server:
+    port: 80
+security:
+  basic:
+    enabled: true
+    security:
+      user:
+        name: admin
+        password: admin
+management:
+  security:
+    enabled: true
+    server:
+      port: 8090
