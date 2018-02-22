@@ -30,13 +30,16 @@ You need to change the development and production properties in src\resources\ap
 * Development
     * unzip techcamp-x.y.z.zip
     * cd techcamp-x.y.z
-    * mvn clean install
-    * java -jar target\techcamp-x.y.z.jar
+    * Option 1:
+        * mvn clean install  
+        * java -jar target\techcamp-x.y.z.jar
+    * Option 2:
+        * mvn clean spring-boot:run 
     * node start  (another terminal)
 
 * Production
     * java -jar -Dspring.profiles.active=production target\techcamp-x.y.z.jar
-
+    
 RELEASES:
 * v.0.0.7
 - Bug detect it. It is need to change campuioValidatedCd column by campuioFinalDecisionQty column.
